@@ -4,8 +4,8 @@ a) hard coded values
 b) input by user
 */
 
-
 #include <stdio.h>
+
 int main() {
 
     // Solution A:
