@@ -9,18 +9,18 @@ Note: There is no income tax below 2.5L, take income value as an input from user
 #include <stdio.h>
 
 int main() {
-    float income, tax;
+    int income, tax;
     printf("Enter your income\n");
-    scanf("%f", &income);
-    if (income > 2.5 && income <= 5.0) {
+    scanf("%d", &income);
+    if (income > 250000 && income <= 500000) {
         tax = (income/100) * 5;
-        printf("Your income tax is %.2f in total\n", tax);
-    } else if (income > 5 && income <= 10) {
+        printf("Your income tax is %d in total\n", tax);
+    } else if (income > 500000 && income <= 1000000) {
         tax = (income/100) * 20;
-        printf("Your income tax is %.2f in total\n", tax);
-    } else if (income > 10) {
+        printf("Your income tax is %d in total\n", tax);
+    } else if (income > 1000000) {
         tax = (income/100) * 30;
-        printf("Your income tax is %.2f in total\n", tax);
+        printf("Your income tax is %d in total\n", tax);
     } else {
         printf("You don't have to pay tax\n");
     }
